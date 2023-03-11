@@ -1,15 +1,13 @@
 # В Windows есть несколько мест, где можно найти список программ, которые запускаются автоматически при старте системы. Вот несколько из них:
 
+- Диспетчер задач --> вкладка Автоз-агрузка
+
 ## Папка "Автозагрузка" в меню "Пуск":
 
-Щелкните правой кнопкой мыши по кнопке "Пуск" в левом нижнем углу экрана.
-Выберите "Проводник" или "Папка".
-В адресной строке введите "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" (без кавычек) и нажмите "Enter".
-В открывшейся папке "Автозагрузка" вы найдете ярлыки программ, которые запускаются при старте системы.
+- В адресной строке введите "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ## Приложение "Планировщик заданий":
 
-Нажмите на кнопку "Пуск".
 В поисковой строке введите "Планировщик заданий" и выберите его из списка результатов поиска.
 В левой панели выберите "Библиотека Планировщика заданий".
 Выберите задание, которое вы хотите изменить, и щелкните на нем правой кнопкой мыши.
@@ -19,17 +17,17 @@
 ## Реестр Windows:
 
 Реестр Windows:
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServicesOnce
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+1. HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+2. HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
+3. HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServicesOnce
+4. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+5. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+6. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit
+7. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
 
 ## Папка "Tasks" в системном каталоге:
 
-C:\Windows\System32\Tasks
+- C:\Windows\System32\Tasks
 Службы Windows:
 
 Через командную строку: **sc queryex type=service**
